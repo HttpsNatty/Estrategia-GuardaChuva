@@ -24,16 +24,6 @@ void borda_direita(void);
 void giro_direita(void);
 void giro_esquerda(void);
 
-// motor esquerdo
-// direcao b== frente
-// direcao a== tras
-
-// motor direito
-// direcao a== frente
-// direcao b== tras
-
-// os sensores de borda possuem logica invertida
-
 void setup()
 {
 
@@ -181,7 +171,6 @@ void loop()
           esquerda();
           delay(100); // tempo para ficar paralelo a linha de centro do robo
         }
-        // else if (!digitalRead(s_esq) && !digitalRead(s_dir)){frente();}
       }
     }
     else if (!digitalRead(s_besq))
